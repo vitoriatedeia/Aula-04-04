@@ -8,10 +8,6 @@
 body {
   height: 100vh;
   background-color: #141016;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -46,8 +42,8 @@ body {
 }
 
 .form_container {
-  height: 100%;
   width: 40%;
+  height: 100%;
   padding-top: 10%;
 }
 
@@ -93,14 +89,14 @@ form .input_data .label_area {
   left: 5%;
   transform: translateY(-50%);
   background-color: #141016;
-  color: #bbbbbb;
+  color: #ffffff;
   padding: 0 15px;
   transition: top 0.5s ease, left 0.5s ease;
 }
 
 form .input_data input:focus,
 form .input_data input:valid {
-  color: #fff;
+  color: rgb(113, 12, 12);
   border-color: rgb(113, 12, 12);
 }
 
@@ -120,12 +116,13 @@ form option {
   border-radius: 10px;
   background: transparent;
   border: 2px solid rgb(113, 12, 12);
-  color: 2px solid rgb(113, 12, 12);
+
+  color: rgb(113, 12, 12);
 }
 
 form button {
   width: 100%;
-  background-color: rgb(149, 37, 37);
+  background-color: rgb(113, 12, 12);
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;

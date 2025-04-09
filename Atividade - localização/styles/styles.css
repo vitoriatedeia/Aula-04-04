@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: bisque;
+
+  background: url("../images/156901517770efba66d3d8d53194fb1a8446ae07fa.jpg")
+    center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  height: 400px;
+  background-color: rgb(100, 100, 100);
+}
