@@ -17,19 +17,74 @@
     />
   </head>
   <body>
-    
     <section class="container">
-        <div class="card">
-          <div class="input_cidade">
-            <input type="text" name="cidade" id="cidade"/>
+      <form action="#" id="search">
+        <i class="fa-solid fa-location-dot"></i>
 
-            <div class="label_area">
-              <p>Digite alguma cidade</p>
+        <input type="text" name="cidade" id="cidade" placeholder="Cidade" />
+
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div class="weather_results" id="weather_results">
+        <h1 class="title" id="title">Name City</h1>
+        <div class="informacoes">
+          <div class="temp">
+            <img
+              id="img"
+              src="#"
+              alt="Imagem vi
+              ndo da API referente ao tempo"
+            />
+            <div>
+              <p class="temp_value" id="tempp1"></p>
+              <p class="temp_description" id="tempp2">Ensolarado</p>
             </div>
           </div>
-          <button type="submit">Pesquisar</button>
-        </form>
+        </div>
+
+        <div class="other_infos">
+          <div class="info">
+            <i class="temp_max_icon fa-solid fa-temperature-high"></i>
+            <div>
+              <h2>Temp. Max</h2>
+              <p class="temp_max" id="tempmax"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="temp_min_icon fa-solid fa-temperature-high"></i>
+            <div>
+              <h2>Temp. Min</h2>
+              <p class="temp_min" id="tempmin"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="humidity_icon fa-solid fa-temperature-high"></i>
+            <div>
+              <h2>Umidade</h2>
+              <p class="humidity" id="umidade"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="wind_icon fa-solid fa-temperature-high"></i>
+            <div>
+              <h2>Vento</h2>
+              <p class="temp_max" id="vento"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-temperature-high"> </i>
+    <i class="fa-solid fa-temperature-low"> </i>
+    <i class="fa-solid fa-droplet"> </i>
+    <i class="fa-solid fa-wind"> </i>
   </body>
 </html>
