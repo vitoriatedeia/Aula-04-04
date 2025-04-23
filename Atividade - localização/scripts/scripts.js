@@ -10,7 +10,7 @@
 
 const search = document.getElementById("search");
 const cityInput = document.getElementById("cidade");
-const cityName = document.getElementById("title");
+const nomeCidade = document.getElementById("title");
 const img = document.getElementById("img");
 const tempp1 = document.getElementById("tempp1");
 const tempp2 = document.getElementById("tempp2");
@@ -22,10 +22,10 @@ const weather_results = document.getElementById("weather_results");
 
 const processar = async (event) => {
   event.preventDefault();
+  const cityName = cityInput.value;
+  const key = "189502a7e0b506e1d9cbe9a654b81843";
 
   try {
-    const cityName = cityInput.value;
-    const key = "189502a7e0b506e1d9cbe9a654b81843";
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
         cityName
@@ -34,7 +34,7 @@ const processar = async (event) => {
     const data = await response.json();
 
     img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    cityName.textContent = data.name;
+    nomeCidade.textContent = data.name;
     tempp1.innerHTML = `${data.main.temp} <sup>C°</sup>`;
     tempp2.textContent = `${data.weather[0].description}`;
     tempmin.innerHTML = `${data.main.temp_min} <sup>C°</sup>`;
